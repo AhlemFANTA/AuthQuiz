@@ -1,0 +1,53 @@
+<mat-card class="welcome-container">
+  <mat-card-title align="center">
+    <h1 class="md-display-3">Quel est votre domaine métier ?</h1>
+  </mat-card-title>
+  <mat-card-subtitle>
+    <h2 class="md-display-2" style="padding-left: 150px">Répondez aux questions afin de determiner le type
+      d'authentification </h2>
+  </mat-card-subtitle>
+  <div class="flex-container" fxLayout="row" fxLayout.xs="column">
+    <mat-card class="quiz-card">
+      <a class="img-link">
+        <img mat-card-image src="assets/images/finance.png" alt="picture of finance">
+      </a>
+      <div class="center">
+        <p>Finance</p>
+      </div>
+    </mat-card>
+    <mat-card class="quiz-card">
+      <a class="img-link">
+        <img mat-card-image src="../../../assets/images/defense.png" alt="picture of defense">
+      </a>
+      <div class="center">
+        <p>Défense</p>
+      </div>
+    </mat-card>
+    <mat-card class="quiz-card">
+      <a class="img-link">
+        <img mat-card-image src="assets/images/health.png" alt="picture of sante">
+      </a>
+      <div class="center">
+        <p>Santé</p>
+      </div>
+    </mat-card>
+    <mat-card class="quiz-card">
+      <a class="img-link">
+        <img mat-card-image src="assets/images/education.png" alt="picture of education">
+      </a>
+      <div class="center">
+        <p>Education</p>
+      </div>
+    </mat-card>
+    <mat-card class="quiz-card">
+      <a class="img-link">
+        <img mat-card-image src="assets/images/ecommerce.png" alt="picture of commerce">
+      </a>
+      <div class="center">
+        <p>E-commerce</p>
+      </div>
+    </mat-card>
+  </div>
+  <button routerLink="/selectModel" mat-raised-button color="primary" class="btn btn-primary"
+  style="margin-left: 420px">Commencez le quiz</button>
+</mat-card>

@@ -1,0 +1,23 @@
+<mat-card class="question-container">
+  <div *ngIf="quiz && !questions" class="spinner-grow text primary">
+  </div>
+  <div *ngIf="questions" class="quiz">
+    <div *ngIf="!showResults" class="questions">
+      <app-question-form [question]="questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
+      </app-question-form>
+      <mat-card-actions align="center">
+        <button mat-raised-button class="btn btn-success" color="primary" (click)="previousAnswer()"
+        [disabled]="answers.values.length==0 || answers.values.length==1">
+          {{currentQuestionIndex !== questions.length -1 ? 'Précédent':null}}
+        </button>
+        <button mat-raised-button class="btn btn-success" color="primary" (click)="nextOrViewResults()"
+                >
+          {{currentQuestionIndex === questions.length -1 ? 'Voir vos critères' : 'Suivant'}}
+        </button>
+      </mat-card-actions>
+
+    </div>
+    <app-results *ngIf="showResults" [answers]="answers" [questions]="questions"></app-results>
+  </div>
+
+</mat-card>

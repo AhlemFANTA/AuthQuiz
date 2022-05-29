@@ -1,0 +1,35 @@
+<div class="quiz" *ngIf="question">
+
+  <h1 style="align-content: center" class="md-display-1">{{question.label}}</h1>
+  <mat-card class="question-form-container">
+    <mat-card-content>
+      
+        <div class="form-group">
+          <div *ngFor="let choice of question.choices">
+            <li>
+              <span class="choice-container">
+                <input *ngIf="question.type !== 'multi'"
+                  type="radio" 
+                  id="choice_{{choice.value}}"
+                  [(ngModel)]="selectedChoice"
+                  [value] = "choice" 
+                  (ngModelChange)="onSingleSelection()"
+                  >
+                  <input *ngIf="question.type === 'multi'"
+                  type="checkbox" 
+                  [(ngModel)]="choice.selected"
+                  (ngModelChange)="onMultipleSelections()"
+                  >
+
+                <span>{{choice.value}}</span>
+              </span>
+            </li>
+          </div>
+          
+        </div>
+      
+      
+    </mat-card-content>
+  </mat-card>
+</div>
+

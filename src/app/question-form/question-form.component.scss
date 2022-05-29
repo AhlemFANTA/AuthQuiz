@@ -1,0 +1,30 @@
+.question-form-container {
+  max-width: 800px;
+  margin: 5px auto;
+}
+
+.mat-card {
+  background-color: powderblue;
+}
+
+mat-card-content {
+  font-size: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.choice-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+input[type="radio"] {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+  margin-right: 10px;
+}

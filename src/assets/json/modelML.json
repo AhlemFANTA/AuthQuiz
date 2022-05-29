@@ -1,0 +1,87 @@
+[
+  {
+    "description": "Info Banque CM",
+    "taille": 3,
+    "criticiteDU": 2,
+    "criticiteDS": 3,
+    "exposition": 3,
+    "stockage": 2,
+
+    "identite": 1,
+    "finance": 1,
+    "sante": 0,
+    "privee": 1,
+    "reseauS": 0,
+    "personnel": 1,
+    "authentification": 4
+  },
+
+  {
+    "description": "Info Doctolib",
+    "taille": 2,
+    "criticiteDU": 2,
+    "criticiteDS": 3,
+    "exposition": 2,
+    "stockage": 1,
+
+    "identite": 1,
+    "finance": 0,
+    "sante": 1,
+    "privee": 1,
+    "reseauS": 0,
+    "personnel": 1,
+    "authentification": 2
+  },
+
+
+  {
+    "description": "Info Paris Nanterre",
+    "taille": 2,
+    "criticiteDU": 1,
+    "criticiteDS": 2,
+    "exposition": 2,
+    "stockage": 1,
+
+    "identite": 1,
+    "finance": 0,
+    "sante": 0,
+    "privee": 0,
+    "reseauS": 1,
+    "personnel": 1,
+    "authentification": 1
+  },
+
+  {
+    "description": "Info JustEat",
+    "taille": 1,
+    "criticiteDU": 1,
+    "criticiteDS": 2,
+    "exposition": 1,
+    "stockage": 1,
+
+    "identite": 1,
+    "finance": 0,
+    "sante": 0,
+    "privee": 0,
+    "reseauS": 1,
+    "personnel": 1,
+    "authentification": 1
+  },
+
+  {
+    "description": "Info Ministère de l'intérieur ",
+    "taille": 3,
+    "criticiteDU": 2,
+    "criticiteDS": 3,
+    "exposition": 3,
+    "stockage": 2,
+
+    "identite": 1,
+    "finance": 0,
+    "sante": 0,
+    "privee": 1,
+    "reseauS": 0,
+    "personnel": 1,
+    "authentification": 3
+  }
+]

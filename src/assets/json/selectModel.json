@@ -1,0 +1,144 @@
+[
+
+  {
+    "label": "Quel est le type de votre organisation?",
+    "name": "typeOrga",
+    "choices": [
+      {
+        "value": "Société à responsabilité limitée (ex. SARL/URL)",
+        "mappings": [{"theme": "taille", "value": 0}]
+      },
+      {
+        "value": "Petites et moyennes structures (ex. PME/PMI)",
+        "mappings": [{"theme": "taille", "value": 1}]
+      },
+      {
+        "value": "Systémique (ex. banques, institutions gouvernementales, etc)",
+        "mappings": [{"theme": "taille", "value": 2}]
+      }
+    ]
+  },
+
+
+  {
+    "label": "Quelle est la criticité des données pour l’utilisateur?",
+    "name": "critiUser",
+    "choices": [
+      {
+        "value": "Public (ex. infos publics sur les RS)",
+        "mappings": [{"theme": "criticiteDU", "value": 0}]
+      },
+      {
+        "value": "Personnel (ex. infos de contact)",
+        "mappings": [{"theme": "criticiteDU", "value": 1}]
+      },
+      {
+        "value": "Privé (ex. historique de navigation)",
+        "mappings": [{"theme": "criticiteDU", "value": 2}]
+      },
+      {
+        "value": "Essentiel (ex. état de santé)",
+        "mappings": [{"theme": "criticiteDU", "value": 3}]
+      }
+    ]
+  },
+
+  {
+    "label": "Quelle est la criticité des données pour l’organisation?",
+    "name": "critiOrga",
+    "choices": [
+      {
+        "value": "Public (ex. rapport financier annuel)",
+        "mappings": [{"theme": "criticiteDS", "value": 0}]
+
+      },
+      {
+        "value": "Privé (ex. données des clients)",
+        "mappings": [{"theme": "criticiteDS", "value": 1}]
+      },
+      {
+        "value": "Essentiel (ex. stratégie marketing de l’entreprise)",
+        "mappings": [{"theme": "criticiteDS", "value": 3}]
+      }
+    ]
+  },
+
+
+  {
+    "label": "Quel niveau d'exposition aux risques d'attaques?",
+    "name": "expo",
+    "choices": [
+      {
+        "value": "Nulle (ex. aucune attaque détectée à date)",
+        "mappings": [{"theme": "exposition", "value": 0}]
+      },
+      {
+        "value": "Faible (ex. moins de 3 attaques détectées à date)",
+        "mappings": [{"theme": "exposition", "value": 1}]
+      },
+      {
+        "value": "Moyen (ex. quelques attaques détectées à date)",
+        "mappings": [{"theme": "exposition", "value": 2}]
+      },
+      {
+        "value": "Extreme (ex. plusieurs attaques détectées   sur une période récente)",
+        "mappings": [{"theme": "exposition", "value": 3}]
+      }
+    ]
+  },
+
+
+
+  {
+    "label": "Comptez-vous stocker les données des utilisateurs ?",
+    "name": "stock",
+    "choices": [
+      {
+        "value": "Aucune persistance (ne garde aucune information permettant de retrouver le user)",
+        "mappings": [{"theme": "stockage", "value": 0}]
+      },
+      {
+        "value": "Données volatiles (ne garde pas d’historique mais l'utilisateur est identifié)",
+        "mappings": [{"theme": "stockage", "value": 1}]
+      },
+      {
+        "value": "Données persistantes (garde les informations de suivi de l'utilisateur)",
+        "mappings": [{"theme": "stockage", "value": 2}]
+      }
+    ]
+  },
+
+
+
+  {
+    "label": "Quel est le type des données utilisateurs manipulées (choix multiples)",
+    "name": "typData",
+    "type": "multi",
+    "choices": [
+      {
+        "value": "Identité (ex: nom, num tél, adresse, situation familiale, etc.)",
+        "mappings": [{"theme": "identite", "value": 1}]
+      },
+      {
+        "value": "Ressources financières (ex: capitaux financiers, prêt bancaire, etc.)",
+        "mappings": [{"theme": "finance", "value": 1}]
+      },
+      {
+        "value": "Santé (ex:  bilan de santé, historique des pathologies, etc.)",
+        "mappings": [{"theme": "sante", "value": 1}]
+      },
+      {
+        "value": "Privé (ex: achat, voyage, endettement, justice, etc.)",
+        "mappings": [{"theme": "privee", "value": 1}]
+      },
+      {
+        "value": "Réseaux sociaux (ex: mail, instagram, facebook, etc.)",
+        "mappings": [{"theme": "reseauS", "value": 1}]
+      },
+      {
+        "value": "Personnel (ex: carte de privilège, promotion, etc.)",
+        "mappings": [{"theme": "personnel", "value": 1}]
+      }
+    ]
+  }
+]

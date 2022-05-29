@@ -1,0 +1,24 @@
+<div class="results">
+  <div class="answer correct" style="font-style: italic; color:darkgreen;">
+    <h1>Votre application nécessite une authentification niveau <strong>{{authentificationLevel}}</strong></h1>
+  </div>
+  <br>
+  <h3 class="md-display-1" align="center">Les spécificités de votre application sont :</h3>
+  <mat-card class="results-container">
+    <div class="answer" *ngFor="let q of questions; let i=index" [ngClass]="{correct: true}">
+      <p class="question-repeat">{{i+1}}. {{q.label}}</p>
+      <p class="your-answer"></p>
+        <ul>
+          <div *ngFor="let c of q.selectedChoices()">
+            <li><b style="color: blue;">{{c.value}}</b></li>
+          </div>
+        </ul>
+      
+    </div>
+  </mat-card>
+</div>
+<div class="center">
+  <a routerLink="/welcome">
+    <button mat-raised-button color="primary" class="btn btn-primary">Recommencez le quiz</button>
+  </a>
+</div>
