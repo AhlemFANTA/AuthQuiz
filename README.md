@@ -1,8 +1,6 @@
-# QuizApp
+# Auth Quiz App
 
-A basic app to practise Angular framework and TypeScript. The application presents users with multiple choice questions on various topics. Once users have answered all the questions, their results will be displayed.
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+The aim of this application is to match the security needs of applications (from different domains) with the solutions provided by the authentication methods in order to have the optimal authentication solution among the possible approaches, based on the analysis of the data actually processed and their use contexts. And taking into consideration the complexity of implementation, infrastructure costs, constraints imposed to the user, etc.
 
 ## Development server
 
